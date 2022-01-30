@@ -14,11 +14,8 @@ name=sys.argv[1]
 
 f1=open('passwords.txt','r')
 lis=[]
-sad=0
+
 for line in f1.readlines():
-    if sad==0:
-        sad+=1
-        continue
     l=line.split()
     if l[0]==name:
         lis.append("deleted!\n")
